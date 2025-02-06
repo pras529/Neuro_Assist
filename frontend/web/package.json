@@ -1,0 +1,16 @@
+{
+  "name": "neuro-assist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@testing-library/react": "^16.2.0",
+    "axios": "^1.7.9",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-router-dom": "^7.1.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

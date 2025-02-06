@@ -1,0 +1,10 @@
+fastapi==0.103.0
+uvicorn==0.29.0
+SQLAlchemy==2.0.30
+passlib[bcrypt]==1.7.4
+python-jose==3.3.0
+python-dotenv==1.0.1
+openai==0.27.8
+google-cloud-storage==2.10.0
+pydantic==1.10.15
+requests==2.31.0
