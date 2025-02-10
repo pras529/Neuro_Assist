@@ -7,7 +7,7 @@
       <excludeFolder url="file://$MODULE_DIR$/frontend/mobile/lib/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/frontend/mobile/lib/build" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.12 (Neuro_Assist)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Neuro_Assist_AI)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
     <orderEntry type="library" name="Dart Packages" level="project" />

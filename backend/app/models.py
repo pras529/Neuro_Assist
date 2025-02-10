@@ -51,6 +51,7 @@ class LearningMaterial(Base):
             "entry_text": self.entry_text
         }
 
+
 class JobListing(Base):
     __tablename__ = "job_listings"
 
