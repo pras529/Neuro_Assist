@@ -1,4 +1,5 @@
 # Neuro-Assist: AI-Powered Accessibility Solution
+![Neuro-Assist Logo](images/neuro-assist-logo.png)
 
 ## 📌 Overview
 Neuro-Assist is an AI-driven accessibility platform designed to support neurodiverse individuals in various aspects of life, including learning, employment, daily routine management, and mental health monitoring. The platform leverages AI and modern web technologies to provide personalized assistance, secure data handling, and an interactive user experience.
