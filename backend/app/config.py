@@ -10,4 +10,4 @@ class Config:
     DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://user:password@localhost/dbname")
     ACCESS_TOKEN_EXPIRE_MINUTES = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", 30))
     CLOUD_STORAGE_BUCKET = os.getenv("CLOUD_STORAGE_BUCKET", "your-bucket-name")
-    AI_MODEL = os.getenv("AI_MODEL", "gpt-4")
+    AI_MODEL = os.getenv("AI_MODEL", "GoogleGemini")
