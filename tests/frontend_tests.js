@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Navbar from '../frontend/web/src/components/Navbar';
-import Footer from '../frontend/web/src/components/Footer';
+import Navbar from '../frontend/web/src/Navbar';
+import Footer from '../frontend/web/src/Footer';
 import Dashboard from '../frontend/web/src/pages/dashboard';
 import Login from '../frontend/web/src/pages/login';
 

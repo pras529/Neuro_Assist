@@ -11,28 +11,32 @@
     <script src="../src/pages/index.js" type="text/javascript"></script>
 
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="logo">Neuro-Assist</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="login.html" class="btn">Login</a></li>
-        </ul>
-    </nav>
+        <div id="navbar-container"></div>
+
 
     <!-- Main Content -->
     <header class="hero">
         <h1>Welcome to Neuro-Assist</h1>
         <p>AI-powered accessibility solution for neurodiverse individuals</p>
-        <button class="cta-button">Get Started</button>
+        <ul>
+            <li><a href="dashboard.html" class="cta-button"> Get Started</a></li>
+        </ul>
+
     </header>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p>© 2025 Neuro-Assist. All rights reserved.</p>
-    </footer>
+    <div id="footer-container"></div>
+
+    <script>
+        // Load Navbar and Footer dynamically
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('navbar-container').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
 
 </body>
 </html>

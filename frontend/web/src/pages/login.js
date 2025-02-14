@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { login } from '../services/api';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 const Login = ({ setUser }) => {
   const [email, setEmail] = useState('');

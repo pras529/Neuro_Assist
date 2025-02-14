@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { fetchUserProfile } from '../services/api';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
 
 const Dashboard = () => {
     const [user, setUser] = useState(null);

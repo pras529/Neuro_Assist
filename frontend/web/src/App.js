@@ -5,8 +5,8 @@ import Login from './pages/login';
 import Register from './pages/register';
 import LearningMaterials from './pages/LearningMaterials';
 import JobListings from './pages/JobListings';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 function App() {
   return (

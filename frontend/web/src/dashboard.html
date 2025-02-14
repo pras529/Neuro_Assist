@@ -7,23 +7,43 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-    <header>
+    <nav class="navbar">
+        <div class="logo">Neuro-Assist</div>
+        <ul class="nav-links">
+            <li><a href="learning.html">Learning</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="routine.html">Routine</a></li>
+            <li><a href="login.html" class="btn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard-container">
         <h1>Welcome to Neuro-Assist Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="learning.html">Learning</a></li>
-                <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="health.html">Health</a></li>
-                <li><a href="routine.html">Routine</a></li>
-                <li><a href="index.html">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="dashboard-content">
-            <h2>Your Personalized Dashboard</h2>
-            <p>Access learning materials, job listings, mental health support, and more.</p>
-        </section>
-    </main>
+        <p>Your personalized AI-powered assistant for neurodiverse individuals.</p>
+
+        <div class="dashboard-sections">
+            <div class="card">
+                <h2>Learning</h2>
+                <p>Enhance your knowledge with AI-powered learning resources.</p>
+                <a href="learning.html" class="btn">Explore</a>
+            </div>
+            <div class="card">
+                <h2>Job Assistance</h2>
+                <p>Find job opportunities tailored for neurodiverse individuals.</p>
+                <a href="jobs.html" class="btn">Find Jobs</a>
+            </div>
+            <div class="card">
+                <h2>Mental Health</h2>
+                <p>Access mental health resources and support networks.</p>
+                <a href="health.html" class="btn">Get Support</a>
+            </div>
+            <div class="card">
+                <h2>Daily Routine</h2>
+                <p>Manage your daily schedule with AI-driven suggestions.</p>
+                <a href="routine.html" class="btn">Manage Routine</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
