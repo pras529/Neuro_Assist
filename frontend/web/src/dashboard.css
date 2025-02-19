@@ -1,3 +1,5 @@
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -14,9 +16,11 @@ body {
     color: white;
 }
 
+
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
+    
 }
 
 .nav-links {
@@ -39,6 +43,7 @@ body {
     padding: 8px 15px;
     border-radius: 5px;
 }
+
 
 .dashboard-container {
     text-align: center;

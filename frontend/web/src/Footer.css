@@ -10,4 +10,15 @@
 
 .footer-text {
     font-size: 0.9rem;
+}   
+li{
+    list-style-type: none;
+    
+
 }
+a{
+    color:white;
+}
+/* .footer-links a{
+    padding-left:-100px;
+} */

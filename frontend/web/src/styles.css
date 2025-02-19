@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Satisfy&display=swap');
+
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -32,6 +37,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    
 }
 
 .nav-links .btn {
@@ -48,27 +54,34 @@ body {
 .hero {
     padding: 100px 20px;
     background-color: #ecf0f1;
+    /* background: url('image.png') no-repeat center center; */
+    /* min-height:100vh;  */
+    min-height: 100vh; 
+    padding-bottom: 50px;
 }
 
 .hero h1 {
     font-size: 36px;
     color: #2c3e50;
+    font-family:"Acme", serif;
 }
 
 .hero p {
     font-size: 18px;
     color: #555;
+    font-family:"Satisfy", serif;
 }
 
 .cta-button {
     background-color: #3498db;
     color: white;
-    padding: 12px 20px;
+    padding: 10px 10px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    margin-left:-35px;
 }
 
 .cta-button:hover {
@@ -83,4 +96,14 @@ body {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.hero {
+    background: radial-gradient(circle, #ecf0f1, #d6eaf8, #f4f6f7);
+    height: 100vh;
+    color: #2c3e50;
+}
+.hero-img{
+    height:100px;
+    
 }
