@@ -9,10 +9,11 @@
 <body>
     <div class="register-container">
         <h2>Create an Account</h2>
-        <form action="#" method="POST">
+         <form id="registerForm">
             <div class="input-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+               <label for="username">Username:</label>
+               <input type="text" id="username" name="username" required>
+
             </div>
             <div class="input-group">
                 <label for="email">Email:</label>
@@ -22,13 +23,35 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <div class="input-group">
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-            </div>
+
             <button type="submit" class="btn">Register</button>
             <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
         </form>
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("registerForm").addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+
+        const response = await fetch("http://localhost:5000/register", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username, email, password }),
+        });
+
+        const result = await response.json();
+        alert(result.message);
+
+        if (response.ok) {
+            window.location.href = "dashboard.html";
+        }
+    });
+});
+</script>
+
     </div>
 </body>
 </html>

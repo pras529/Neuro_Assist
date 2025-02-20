@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Neuro-Assist</title>
     <link rel="stylesheet" href="dashboard.css">
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const userToken = localStorage.getItem("userToken");
+
+        if (!userToken) {
+            alert("You need to log in first!");
+            window.location.href = "login.html"; // Redirect to login page
+        }
+    });
+</script>
+
+
 </head>
 <body>
     <nav class="navbar">

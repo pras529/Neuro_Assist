@@ -1,6 +1,13 @@
 {
   "dependencies": {
-    "@testing-library/react": "^16.2.0"
+    "@testing-library/react": "^16.2.0",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.3"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.6.3",
