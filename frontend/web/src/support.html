@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Services - Neuro-Assist</title>
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Support Services</h1>
+        <p>Find the right support services for neurodivergent individuals.</p>
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Search & Filter Options -->
+    <div class="filter-container">
+        <label for="search-bar"></label><input type="text" id="search-bar" placeholder="🔍 Search services...">
+        <label for="filter-group"></label><select id="filter-group">
+            <option value="">Filter by Target Group</option>
+            <option value="Children">Children</option>
+            <option value="Teens">Teens</option>
+            <option value="Adults">Adults</option>
+            <option value="Parents">Parents</option>
+        </select>
+        <label for="filter-condition"></label><select id="filter-condition">
+            <option value="">Filter by Condition</option>
+            <option value="ASD">Autism Spectrum Disorder (ASD)</option>
+            <option value="ADHD">Attention Deficit Hyperactivity Disorder (ADHD)</option>
+            <option value="Dementia">Dementia</option>
+        </select>
+    </div>
+
+    <!-- Services Display -->
+    <section id="services-container" class="services-grid"></section>
+
+    <script src="support.js"></script>
+
+</body>
+</html>
