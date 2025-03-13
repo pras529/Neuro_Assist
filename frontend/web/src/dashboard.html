@@ -17,50 +17,69 @@
     });
 </script> -->
 
+    <script defer src="dashboard.js"></script>
 
 </head>
 <body>
+    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <img src="final_circular_logo.png">
             <a href="index.html"><b><i>Neuro-Assist</i></b></a>
         </div>    
         <ul class="nav-links">
-            <li><a href="support.html">Services</a> </li>
+            <li><a href="support.html">Services</a></li>
             <li><a href="learning.html">Learning</a></li>
             <li><a href="jobs.html">Jobs</a></li>
             <li><a href="health.html">Health</a></li>
             <li><a href="routine.html">Routine</a></li>
-            <li><a href="login.html" class="btn">Logout</a></li>
+            <li><a href="#" id="logout-btn" class="btn">Logout</a></li>
         </ul>
     </nav>
 
+    <!-- Dashboard Container -->
     <div class="dashboard-container">
         <h1>Welcome to Neuro-Assist Dashboard</h1>
         <p class="special">Your personalized AI-powered assistant for neurodiverse individuals.</p>
+        <h1 id="user-greeting"></h1>
+        <p>Your personalized AI-powered assistant for neurodiverse individuals.</p>
 
+        <!-- User Data Section -->
         <div class="dashboard-sections">
             <div class="card">
-                <h2>Learning</h2>
-                <p>Enhance your knowledge with AI-powered learning resources.</p>
-                <a href="learning.html" class="btn">Explore</a>
+                <h2>Progress Overview</h2>
+                <div class="progress-container">
+                    <p><strong>Learning:</strong> <span id="learning-progress">Loading...</span>%</p>
+                    <p><strong>Job Assistance:</strong> <span id="job-progress">Loading...</span>%</p>
+                    <p><strong>Mental Health:</strong> <span id="health-progress">Loading...</span>%</p>
+                    <p><strong>Daily Routine:</strong> <span id="routine-progress">Loading...</span>%</p>
+                </div>
             </div>
+
             <div class="card">
-                <h2>Job Assistance</h2>
-                <p>Find job opportunities tailored for neurodiverse individuals.</p>
-                <a href="jobs.html" class="btn">Find Jobs</a>
+                <h2>Today's Schedule</h2>
+                <ul id="schedule-list">
+                    <li>Loading schedule...</li>
+                </ul>
             </div>
+
             <div class="card">
-                <h2>Mental Health</h2>
-                <p>Access mental health resources and support networks.</p>
-                <a href="health.html" class="btn">Get Support</a>
+                <h2>Recent Activities</h2>
+                <ul id="recent-activities">
+                    <li>Loading activities...</li>
+                </ul>
             </div>
+
             <div class="card">
-                <h2>Daily Routine</h2>
-                <p>Manage your daily schedule with AI-driven suggestions.</p>
-                <a href="routine.html" class="btn">Manage Routine</a>
+                <h2>Recommendations</h2>
+                <p>AI-powered suggestions for improving productivity and well-being.</p>
+                <ul id="recommendation-list">
+                    <li>Loading recommendations...</li>
+                </ul>
             </div>
         </div>
     </div>
+
+
 </body>
 </html>
