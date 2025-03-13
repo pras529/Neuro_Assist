@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Satisfy&display=swap');
 
 body {
     font-family: Arial, sans-serif;
@@ -8,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #007bff;
+    /* background-color: #007bff; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,15 +18,15 @@ body {
     color: white;
 }
 
-
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    
-}
+/* .logo {
+    position: relative;
+    top: -9px; 
+} */
 
 .nav-links {
     list-style: none;
+    padding:0;
+    margin:0;
     display: flex;
 }
 
@@ -35,28 +37,35 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size:18px;
 }
 
 .nav-links .btn {
-    background-color: #ff4c4c;
+    background-color: #3498db;
     padding: 8px 15px;
     border-radius: 5px;
 }
+.nav-links a:hover{
+    color:#3498db;
+}
 
+.dashboard-container h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    font-family: "Acme", serif;
+}
 
+.dashboard-container .special {
+    font-size: 25px;
+    color: #555;
+    font-family: "Satisfy", serif;
+}
 .dashboard-container {
     text-align: center;
     padding: 50px;
 }
 
-.dashboard-container h1 {
-    color: #333;
-}
-
-.dashboard-container p {
-    color: #666;
-}
 
 .dashboard-sections {
     display: flex;

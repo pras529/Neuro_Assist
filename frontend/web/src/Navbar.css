@@ -5,8 +5,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 10px 6px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* position:fixed; */
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
 }
 
 .logo {
@@ -23,7 +29,7 @@
 .nav-links {
     display: flex;
     gap: 20px;
-}
+} 
 
 .nav-links a {
     color: white;
@@ -41,13 +47,17 @@ a{
 }
 img{
     height:40px;
+    margin-top: 5px;
     
 }
 .logo a {
     position: relative;
     top: -9px; 
 }
-
+.nav-links .btn{
+    padding:5px 8px;
+    
+}
 
 
 

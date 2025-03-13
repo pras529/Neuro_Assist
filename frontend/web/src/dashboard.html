@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Neuro-Assist</title>
     <link rel="stylesheet" href="dashboard.css">
-    <script>
+    <link rel="stylesheet" href="Navbar.css">
+    <!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
         const userToken = localStorage.getItem("userToken");
 
@@ -14,13 +15,16 @@
             window.location.href = "login.html"; // Redirect to login page
         }
     });
-</script>
+</script> -->
 
 
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Neuro-Assist</div>
+        <div class="logo">
+            <img src="final_circular_logo.png">
+            <a href="index.html"><b><i>Neuro-Assist</i></b></a>
+        </div>    
         <ul class="nav-links">
             <li><a href="support.html">Services</a> </li>
             <li><a href="learning.html">Learning</a></li>
@@ -33,7 +37,7 @@
 
     <div class="dashboard-container">
         <h1>Welcome to Neuro-Assist Dashboard</h1>
-        <p>Your personalized AI-powered assistant for neurodiverse individuals.</p>
+        <p class="special">Your personalized AI-powered assistant for neurodiverse individuals.</p>
 
         <div class="dashboard-sections">
             <div class="card">

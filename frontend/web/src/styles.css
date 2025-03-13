@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
 
-
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Dancing+Script:wght@400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Satisfy&display=swap');
 
 /* General Styles */
@@ -11,7 +10,6 @@ body {
     background-color: #f4f4f9;
     text-align: center;
 }
-
 /* Navbar Styles */
 .navbar {
     display: flex;
@@ -37,7 +35,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    
+
 }
 
 .nav-links .btn {
@@ -54,39 +52,37 @@ body {
 .hero {
     padding: 100px 20px;
     background-color: #ecf0f1;
-    /* background: url('image.png') no-repeat center center; */
-    /* min-height:100vh;  */
-    min-height: 100vh; 
+    min-height: 100vh;
     padding-bottom: 50px;
 }
 
 .hero h1 {
     font-size: 36px;
     color: #2c3e50;
-    font-family:"Acme", serif;
+    font-family: "Acme", serif;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 25px;
     color: #555;
-    font-family:"Satisfy", serif;
+    font-family: "Satisfy", serif;
 }
 
-.cta-button {
+/* .cta-button {
     background-color: #3498db;
     color: white;
-    padding: 10px 10px;
-    font-size: 18px;
+    padding: 8px 8px;
+    font-size: 14px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
-    margin-left:-35px;
-}
+    margin-left: -90px;
+} */
 
-.cta-button:hover {
+/* .cta-button:hover {
     background-color: #2980b9;
-}
+} */
 
 /* Footer Styles */
 .footer {
@@ -98,12 +94,146 @@ body {
     width: 100%;
 }
 
-.hero {
+/* .hero {
     background: radial-gradient(circle, #ecf0f1, #d6eaf8, #f4f6f7);
     height: 100vh;
     color: #2c3e50;
+} */
+.hero-img {
+    height: 100px;
+
 }
-.hero-img{
-    height:100px;
+.lines {
+    padding-top: 218px;
+}
+
+.lines h1,
+.lines p {
+    margin-left: -50px;
+
+}
+/* .lines h1, .lines p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+.animated-text span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInLetter 0.5s ease-out forwards;
+}
+
+@keyframes fadeInLetter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subheading {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideIn 1s ease-out 1s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+.cta-button {
+    display: inline-block;
+    padding: 9px 18px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #2c3e50, #3498db);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.5s ease;
+    animation: fadeInButton 1s ease-in-out 2s forwards;
+    opacity: 0;
+    margin-left: -80px;
+}
+
+/* Hover Effect */
+.cta-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #1a252f, #217dbb);
+    box-shadow: 0px 8px 20px rgba(52, 152, 219, 0.6);
+}
+
+/* Fade-in Animation */
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     
 }
+
+.hero {
+    flex: 1; /* Makes it take up remaining space */
+}
+
+.footer {
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.hero {
+    background: url('wlppr.avif') no-repeat center center ;
+    background-size:cover; 
+    background-position: 90% center;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    margin-top: -130px;
+
+    
+}
+
+
+
+
+
+

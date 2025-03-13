@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuro-Assist</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
- <div id="root"></div>  <!-- React will render here -->
+    <div id="root"></div> 
     <script src="../src/pages/index.js" type="text/javascript"></script>
 
     <!-- Navigation Bar -->
-        <div id="navbar-container"></div>
+    <div id="navbar-container"></div>
 
 
     <!-- Main Content -->
     <header class="hero">
-        <img src="neuro.png" alt="Neuro-Assist Hero Image" class="hero-img">
-        <h1>Welcome to Neuro-Assist</h1>
-        <p>AI-powered accessibility solution for neurodiverse individuals</p>
+        <!-- <img src="neuro.png" alt="Neuro-Assist Hero Image" class="hero-img"> -->
+        <div class="lines">
+            <h1 class="animated-text">Welcome to Neuro-Assist</h1>
+            <p class="subheading">AI-powered accessibility solution for neurodiverse individuals</p>
+        </div>
+
         <ul>
+            <br>
             <li><a href="register.html" class="cta-button"> Get Started</a></li>
         </ul>
 
@@ -37,7 +43,30 @@
         fetch('footer.html')
             .then(response => response.text())
             .then(data => document.getElementById('footer-container').innerHTML = data);
+
+
+            document.addEventListener("DOMContentLoaded", function () {
+    const text = document.querySelector(".animated-text");
+    const letters = text.textContent.split(""); // Split into characters
+    text.innerHTML = ""; // Clear original text
+
+    letters.forEach((letter, index) => {
+        let span = document.createElement("span");
+        span.textContent = letter;
+        span.style.animationDelay = `${index * 0.1}s`; // Delay each letter
+
+        // Preserve spaces by adding a non-breaking space ( &nbsp; ) inside a span
+        if (letter === " ") {
+            span.innerHTML = "&nbsp;";
+        }
+
+        text.appendChild(span);
+    });
+});
+
+
     </script>
 
 </body>
+
 </html>

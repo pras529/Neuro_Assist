@@ -3,7 +3,7 @@
     color: white;
     text-align: center;
     padding: 15px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
@@ -22,3 +22,14 @@ a{
 /* .footer-links a{
     padding-left:-100px;
 } */
+
+.footer-links {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    padding-left: 12px;
+}
+.footer-content p{
+    padding-left:11px;
+}
+
