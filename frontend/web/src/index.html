@@ -17,7 +17,7 @@
 
     <!-- Hero Section -->
     <header class="hero">
-        <!-- <img src="neuro.png" alt="Neuro-Assist Hero Image" class="hero-img"> -->
+        
         <div class="lines">
             <h1 class="animated-text">Welcome to Neuro-Assist</h1>
             <p class="subheading">AI-powered accessibility solution for neurodiverse individuals</p>
@@ -28,18 +28,15 @@
             <li><a href="register.html" class="cta-button"> Get Started</a></li>
         </ul>
 
-        <img src="neuro.png" alt="Neuro-Assist Hero Image" class="hero-img">
-        <h1>Welcome to Neuro-Assist</h1>
-        <p>AI-powered accessibility solution for neurodiverse individuals</p>
-        <a href="register.html" class="cta-button">Get Started</a>
+
     </header>
 
     <!-- Features Section -->
     <section id="features">
-        <h2>Our Features</h2>
+        <h1>Our Features</h1>
         <div class="features-grid">
             <div class="feature-card">
-                <img src="ai-assist.png" alt="AI Assistance">
+                <img src="ai.png" alt="AI Assistance">
                 <h3>AI Assistance</h3>
                 <p>Personalized AI-powered support for neurodiverse individuals.</p>
             </div>
@@ -49,21 +46,21 @@
                 <p>IoT-enabled tools to help manage daily tasks effortlessly.</p>
             </div>
             <div class="feature-card">
-                <img src="social.png" alt="Social Training">
+                <img src="social.jpg" alt="Social Training" class="spl">
                 <h3>Social Training</h3>
                 <p>VR-based training to enhance social interactions.</p>
             </div>
-            <div class="feature-item">
-                <img src="health.png" alt="Health Management">
+            <div class="feature-card">
+                <img src="health.png" alt="Health Management" class="spl">
                 <h3>Health Management</h3>
                 <p>Track mental and physical health with AI-driven insights.</p>
             </div>
-            <div class="feature-item">
+            <div class="feature-card">
                 <img src="jobs.png" alt="Job Listings">
                 <h3>Job Listings</h3>
                 <p>Find neurodiverse-friendly job opportunities.</p>
             </div>
-            <div class="feature-item">
+            <div class="feature-card">
                 <img src="learning.png" alt="Learning Management">
                 <h3>Learning Management</h3>
                 <p>Access personalized learning tools and educational support.</p>
@@ -101,7 +98,7 @@
         <h2>Contact Us</h2>
         <form id="contact-form">
             <label>
-                <input type="text" name="name" placeholder="Prashant bansal" required>
+                <input type="text" name="name" placeholder="Prashant Bansal" required>
             </label>
             <label>
                 <input type="email" name="email" placeholder="prashantbansal529@gmail.com" required>
@@ -117,7 +114,7 @@
     <div id="footer-container"></div>
 
     <script>
-        // Load Navbar and Footer dynamically
+        
         fetch('navbar.html')
             .then(response => response.text())
             .then(data => document.getElementById('navbar-container').innerHTML = data);
@@ -129,15 +126,14 @@
 
             document.addEventListener("DOMContentLoaded", function () {
     const text = document.querySelector(".animated-text");
-    const letters = text.textContent.split(""); // Split into characters
-    text.innerHTML = ""; // Clear original text
-
+    const letters = text.textContent.split(""); 
+    text.innerHTML = ""; 
     letters.forEach((letter, index) => {
         let span = document.createElement("span");
         span.textContent = letter;
-        span.style.animationDelay = `${index * 0.1}s`; // Delay each letter
+        span.style.animationDelay = `${index * 0.1}s`; 
 
-        // Preserve spaces by adding a non-breaking space ( &nbsp; ) inside a span
+        
         if (letter === " ") {
             span.innerHTML = "&nbsp;";
         }
@@ -146,6 +142,43 @@
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const cards = document.querySelectorAll(".feature-card, .review-card"); 
+
+    function revealCards() {
+        cards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (cardTop < windowHeight - 100) { 
+                card.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealCards);
+    revealCards(); 
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll("#about");
+
+    function revealAboutSection() {
+        elements.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (sectionTop < windowHeight - 100) { 
+                section.classList.add("show");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealAboutSection);
+    revealAboutSection(); 
+});
 
     </script>
 

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Neuro-Assist</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="stylesheet" href="Navbar.css">
-    <!-- <script>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <script>
     document.addEventListener("DOMContentLoaded", function () {
         const userToken = localStorage.getItem("userToken");
 
@@ -15,18 +17,19 @@
             window.location.href = "login.html"; // Redirect to login page
         }
     });
-</script> -->
+</script>
 
     <script defer src="dashboard.js"></script>
 
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <img src="final_circular_logo.png">
             <a href="index.html"><b><i>Neuro-Assist</i></b></a>
-        </div>    
+        </div>
         <ul class="nav-links">
             <li><a href="support.html">Services</a></li>
             <li><a href="learning.html">Learning</a></li>
@@ -42,11 +45,13 @@
         <h1>Welcome to Neuro-Assist Dashboard</h1>
         <p class="special">Your personalized AI-powered assistant for neurodiverse individuals.</p>
         <h1 id="user-greeting"></h1>
-        <p>Your personalized AI-powered assistant for neurodiverse individuals.</p>
+
 
         <!-- User Data Section -->
         <div class="dashboard-sections">
             <div class="card">
+                <img
+                    src="https://static.vecteezy.com/system/resources/previews/035/373/777/non_2x/progress-overview-concept-vector.jpg">
                 <h2>Progress Overview</h2>
                 <div class="progress-container">
                     <p><strong>Learning:</strong> <span id="learning-progress">Loading...</span>%</p>
@@ -57,6 +62,8 @@
             </div>
 
             <div class="card">
+                <img
+                    src="https://embed.cdn.pais.scholastic.com/v1/channels/tso/products/identifiers/isbn/9781338127881/primary/renditions/700?useMissingImage=true">
                 <h2>Today's Schedule</h2>
                 <ul id="schedule-list">
                     <li>Loading schedule...</li>
@@ -64,6 +71,8 @@
             </div>
 
             <div class="card">
+                <img
+                    src="https://cdn3.iconfinder.com/data/icons/ios-web-user-interface-flat-circle-vol-1/512/Activities_history_log_past_recent-512.png">
                 <h2>Recent Activities</h2>
                 <ul id="recent-activities">
                     <li>Loading activities...</li>
@@ -71,6 +80,8 @@
             </div>
 
             <div class="card">
+                <img
+                    src="https://u.osu.edu/clineleadershipassignment/files/2019/07/MAG-Ransbotham-Ratings-Recommendations-1200.jpg">
                 <h2>Recommendations</h2>
                 <p>AI-powered suggestions for improving productivity and well-being.</p>
                 <ul id="recommendation-list">
@@ -79,7 +90,15 @@
             </div>
         </div>
     </div>
+    <div id="footer-container"></div>
 
+    <script>
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer-container').innerHTML = data);
+    </script>
 
 </body>
+
 </html>

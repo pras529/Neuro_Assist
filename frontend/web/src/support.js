@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
             conditions: "Various neurodevelopmental conditions",
             source: "https://neurodiversecommunities.com"
         },
-        {
-            name: "Educational Support Programs",
-            description: "Supporting neurodivergent students in education.",
-            targetGroup: "Children, Teens",
-            conditions: "ASD, ADHD",
-            source: "https://mindsautism.com"
-        }
+        // {
+        //     name: "Educational Support Programs",
+        //     description: "Supporting neurodivergent students in education.",
+        //     targetGroup: "Children, Teens",
+        //     conditions: "ASD, ADHD",
+        //     source: "https://mindsautism.com"
+        // }
     ];
 
     const container = document.getElementById("services-container");
@@ -70,16 +70,40 @@ document.addEventListener("DOMContentLoaded", function () {
     const filterGroup = document.getElementById("filter-group");
     const filterCondition = document.getElementById("filter-condition");
 
+    // function displayServices(filteredServices) {
+    //     container.innerHTML = "";
+    //     filteredServices.forEach(service => {
+    //         const card = document.createElement("div");
+    //         card.classList.add("service-card");
+    //         card.innerHTML = `<h2>${service.name}</h2><p>${service.description}</p><p><strong>Target:</strong> ${service.targetGroup}</p><p><strong>Conditions:</strong> ${service.conditions}</p><a href="${service.source}" target="_blank">Learn More</a>`;
+    //         container.appendChild(card);
+    //     });
+    // }
+
     function displayServices(filteredServices) {
         container.innerHTML = "";
         filteredServices.forEach(service => {
             const card = document.createElement("div");
             card.classList.add("service-card");
-            card.innerHTML = `<h2>${service.name}</h2><p>${service.description}</p><p><strong>Target:</strong> ${service.targetGroup}</p><p><strong>Conditions:</strong> ${service.conditions}</p><a href="${service.source}" target="_blank">Learn More</a>`;
+    
+            card.innerHTML = `
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>${service.name}</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>${service.description}</p>
+                        <p><strong>Target:</strong> ${service.targetGroup}</p>
+                        <p><strong>Conditions:</strong> ${service.conditions}</p>
+                        <a href="${service.source}" target="_blank">Learn More</a>
+                    </div>
+                </div>
+            `;
+            
             container.appendChild(card);
         });
     }
-
+    
     function filterServices() {
         const searchText = searchBar.value.toLowerCase();
         const group = filterGroup.value;
