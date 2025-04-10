@@ -12,6 +12,7 @@ dependencies:
     sdk: flutter
   http: ^1.3.0 # For making HTTP requests
   provider: ^6.0.5 # State management
+  supabase_flutter: ^2.8.4
   # Add other dependencies as needed
 
 dev_dependencies:
