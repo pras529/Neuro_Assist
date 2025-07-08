@@ -12,7 +12,7 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 app.use(cors());
 app.use(bodyParser.json());
 
-// ✅ REGISTER USER API
+
 app.post("/register", async (req, res) => {
     const { username, email, password } = req.body;
 
@@ -40,7 +40,7 @@ app.post("/register", async (req, res) => {
     }
 });
 
-// ✅ LOGIN USER API
+
 app.post("/login", async (req, res) => {
     const { email, password } = req.body;
 
