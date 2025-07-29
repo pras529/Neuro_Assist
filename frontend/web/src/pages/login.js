@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { login } from '../services/api';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import Navbar from '../../js/Navbar';
+import Footer from '../../js/Footer';
 
 const Login = ({ setUser }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -13,6 +16,9 @@ const Login = ({ setUser }) => {
       const data = await login(email, password);
       localStorage.setItem('token', data.token);
       setUser(data.user);
+      console.log("Login response data:", data);
+
+      navigate('/dashboard');
     } catch (err) {
       setError(err.message || 'Login failed');
     }

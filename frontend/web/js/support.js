@@ -12,21 +12,21 @@ document.addEventListener("DOMContentLoaded", function () {
             description: "Facilitated small groups aimed at improving social interactions.",
             targetGroup: "Children, Teens",
             conditions: "ASD",
-            source: "https://mindsautism.com"
+            source: "https://autismcenterforkids.com/articles/social-skills-groups/"
         },
         {
             name: "Parent Workshops",
             description: "Educational sessions providing tools for parents.",
             targetGroup: "Parents",
             conditions: "ASD",
-            source: "https://mindsautism.com"
+            source: "https://www.autism-india.org/Parent-Child-Training-Program.php"
         },
         {
             name: "Neuropsychological Assessments",
             description: "Comprehensive evaluations for developmental and learning disorders.",
             targetGroup: "Children",
             conditions: "ASD, ADHD",
-            source: "https://pediatricneurodiversity.com"
+            source: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7247165/"
         },
         {
             name: "Animal-Assisted Therapy",
@@ -47,14 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
             description: "Strategies for managing behavioral concerns.",
             targetGroup: "Children, Teens, Adults",
             conditions: "ASD, ADHD",
-            source: "https://pacificclinics.org"
+            source: "https://childmind.org/article/adhd-behavior-problems/"
         },
         {
             name: "Case Management Services",
             description: "Coordinating care and accessing resources for neurodivergent individuals.",
             targetGroup: "Children, Teens, Adults",
             conditions: "Various neurodevelopmental conditions",
-            source: "https://neurodiversecommunities.com"
+            source: "https://researchbriefings.files.parliament.uk/documents/POST-PN-0733/POST-PN-0733.pdf"
         },
         // {
         //     name: "Educational Support Programs",

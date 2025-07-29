@@ -365,7 +365,7 @@ html, body {
 }
 
 .hero {
-    background: url('wlppr.avif') no-repeat center center ;
+    background: url('../images/wlppr.avif') no-repeat center center ;
     background-size:cover; 
     background-position: 90% center;
     width: 100%;

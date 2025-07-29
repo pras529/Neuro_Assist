@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { register } from '../services/api';
 
 const Register = ({ setUser }) => {
@@ -9,6 +10,7 @@ const Register = ({ setUser }) => {
   });
 
   const [error, setError] = useState('');
+   const navigate = useNavigate();
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -20,6 +22,9 @@ const Register = ({ setUser }) => {
       const data = await register(formData);
       localStorage.setItem('token', data.token);
       setUser(data.user);
+      console.log("Register response data:", data);
+
+      navigate('/dashboard');
     } catch (err) {
       setError(err.message || 'Registration failed');
     }
